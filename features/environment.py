@@ -1,7 +1,6 @@
 # -*- coding: UTF-8 -*-
 
-"""
-I4S BDD Security
+""""
 Module: behave
 File: environment.py
 Description: PRE and POST events of scenarios and steps

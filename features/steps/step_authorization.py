@@ -1,10 +1,9 @@
 # -*- coding: utf-8 -*-
 
-"""
-I4S BDD Security
-Module: steps
+""""
+Module: behave
 File: step_authorization.py
-Description: Steps to manage authorization with Browser at web aplication
+Description: steps
 Authors: Pedro Serrano
 """
 
