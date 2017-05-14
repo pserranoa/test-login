@@ -1,9 +1,8 @@
 # lenguage: en
 @browser
-Feature: Operator login
+Feature: Web login
 	As an application owner
 	I want to be able to log into the system
-	In order to operate with the tool
 
 @login @browser
     Scenario: Successful login

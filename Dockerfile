@@ -1,4 +1,4 @@
-FROM python:2.7-alpine
+FROM python:3.5-alpine
 
 #===================
 # environment
@@ -23,10 +23,12 @@ RUN addgroup -g ${gid} ${group} && \
 #===================
 # Requisites
 #===================
-RUN \
-  apk update && \
-  apk add xvfb dbus-x11 firefox-esr ttf-freefont && \
-  pip install behave>=1.2.5 selenium==2.52.0 pyvirtualdisplay>=0.1.5 PyHamcrest>=1.8
+RUN echo "http://dl-4.alpinelinux.org/alpine/v3.4/main" >> /etc/apk/repositories && \
+	  echo "http://dl-4.alpinelinux.org/alpine/v3.4/community" >> /etc/apk/repositories
+
+RUN apk update && \
+	apk add python py-pip curl unzip libexif udev chromium chromium-chromedriver xvfb && \
+	pip install behave selenium pyvirtualdisplay PyHamcrest
 
 COPY /features /opt/bdd
 ADD behave.ini /opt/bdd

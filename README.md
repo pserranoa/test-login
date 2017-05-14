@@ -6,11 +6,9 @@ This docker will require the following parameters
 
 |Field|Description|
 |:----|----------:|
-|BEHAVE_HOST_FQDN|Ip or fqnd name to test|
-|BEHAVE_HOST_PORT|Port where listen front (80/443)|
-|BEHAVE_HOST_PROTOCOL|Protocol configured (http/https)|
-|BEHAVE_DEFAULT_USER_LOGIN|Login user|
-|BEHAVE_DEFAULT_USER_PASSWORD|Login password|
+|BEHAVE_URL_LOGIN|URL witch you put user password|
+|BEHAVE_USER_LOGIN|Login user|
+|BEHAVE_USER_PASSWORD|Login password|
 |BEHAVE_APP_LOGIN_USER|CSS locator for login field|
 |BEHAVE_APP_LOGIN_PASS|CSS locator for password field|
 |BEHAVE_APP_LOGIN_BUTTON|CSS locator for submit login form|
@@ -72,5 +70,3 @@ Failing scenarios:
 3 steps passed, 1 failed, 0 skipped, 0 undefined
 Took 0m11.007s
 ```
-
-
