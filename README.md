@@ -1,4 +1,4 @@
-CKER TEST LOGIN
+CHEKER TEST LOGIN
 
 This pipeline contructs a docker that permits test a web login with user/pass credentials.
 
@@ -6,7 +6,7 @@ This docker will require the following parameters
 
 |Field|Description|
 |:----|----------:|
-|BEHAVE_URL_LOGIN|URL witch you put user password|
+|BEHAVE_URL_LOGIN|URL to enter user and password|
 |BEHAVE_USER_LOGIN|Login user|
 |BEHAVE_USER_PASSWORD|Login password|
 |BEHAVE_APP_LOGIN_USER|CSS locator for login field|
