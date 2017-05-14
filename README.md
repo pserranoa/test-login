@@ -6,12 +6,12 @@ This docker will require the following parameters
 
 |Field|Description|
 |:----|----------:|
-|BEHAVE_URL_LOGIN|URL to enter user and password|
-|BEHAVE_USER_LOGIN|Login user|
-|BEHAVE_USER_PASSWORD|Login password|
-|BEHAVE_APP_LOGIN_USER|CSS locator for login field|
-|BEHAVE_APP_LOGIN_PASS|CSS locator for password field|
-|BEHAVE_APP_LOGIN_BUTTON|CSS locator for submit login form|
+|URL_LOGIN|URL to enter user and password|
+|USER_LOGIN|Login user|
+|USER_PASSWORD|Login password|
+|APP_LOGIN_USER|CSS locator for login field|
+|APP_LOGIN_PASS|CSS locator for password field|
+|APP_LOGIN_BUTTON|CSS locator for submit login form|
 
 Creation
 ```
