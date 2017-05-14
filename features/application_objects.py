@@ -40,7 +40,7 @@ class WebAppData(object):
     def get_browser(self):
         return self.browser
 
-    def set_browser(self,browser="Firefox"):
+    def set_browser(self,browser="Chrome"):
         self.browser = browser
 
     def get_app_login_user_field(self):

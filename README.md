@@ -13,14 +13,17 @@ This docker will require the following parameters
 |APP_LOGIN_PASS|CSS locator for password field|
 |APP_LOGIN_BUTTON|CSS locator for submit login form|
 
+
 Creation
 ```
 docker build -t test_login .
 ```
 
+## You MUST mount /dev/shm volume from host to avoid chrome crash (option -v /dev/shm:/dev/shm)
+
 Execution
 ```
-docker run --env-file variables test_login
+docker run --env-file variables -v /dev/shm:/dev/shm test_login
 ```
 
 # Exit examples

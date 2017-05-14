@@ -81,13 +81,13 @@ def before_all(context):
     context.display.start()
 
 def before_scenario(context, scenario):
-        options = webdriver.ChromeOptions()
-        options.add_argument('--ignore-certificate-errors')
-        options.add_argument('--no-sandbox')
-        context.browser = webdriver.Chrome(chrome_options=options)
+    options = webdriver.ChromeOptions()
+    options.add_argument('--ignore-certificate-errors')
+    options.add_argument('--no-sandbox')
+    context.browser = webdriver.Chrome(chrome_options=options)
 
 def after_scenario(context, scenario):
-        context.browser.close()
+    context.browser.quit()
 
 def alter_all(context):
     context.display.stop()
